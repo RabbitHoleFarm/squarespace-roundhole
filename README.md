@@ -2,4 +2,4 @@
 
 > Tweaks to Rabbit Hole Farm's Squarespace site
 
-Delivered via jsDelivr.
+Delivered to y'all via jsDelivr.

@@ -21,17 +21,12 @@ function fixDates() {
 }
 
 (function () {
-    // Adding the script tag to the head as suggested before
-    var head = document.head;
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.src = 'https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js';
 
-    // Then bind the event to the callback function.
-    // There are several events for cross browser compatibility.
-    script.onreadystatechange = callback;
-    script.onload = fixDates;
+    s.onreadystatechange = fixDates;
+    s.onload = fixDates;
 
-    // Fire the loading
-    head.appendChild(script);
+    document.head.appendChild(script);
 })();
