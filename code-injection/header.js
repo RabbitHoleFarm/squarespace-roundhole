@@ -28,5 +28,5 @@ function fixDates() {
     s.onreadystatechange = fixDates;
     s.onload = fixDates;
 
-    document.head.appendChild(script);
+    document.head.appendChild(s);
 })();
